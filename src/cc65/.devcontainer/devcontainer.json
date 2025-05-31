@@ -24,7 +24,6 @@
 		}
 	},
 
-	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "cc65 --version",
 	
 	"remoteEnv": {
