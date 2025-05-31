@@ -1,0 +1,42 @@
+{
+    "id": "cc65",
+    "version": "1.0.0",
+    "name": "cc65",
+    "description": "Atari Lynx dev container template for cc65",
+    "documentationURL": "https://github.com/AtariLynx/",
+    "publisher": "Atari Lynx developers community",
+    "licenseURL": "https://github.com/devcontainers/templates/blob/main/LICENSE",
+    "options": {
+        "imageVariant": {
+            "type": "string",
+            "description": "Alpine version:",
+            "proposals": [
+				"3.20",
+				"3.19",
+				"3.18",
+                "3.17"
+            ],
+            "default": "3.20"
+        },
+        "cc65Version": {
+            "type": "string",
+            "description": "cc65 version:",
+            "proposals": [
+                "latest",
+                "2.19",
+                "2.18",
+                "2.17",
+                "2.16",
+                "2.15"
+            ],
+            "default": "latest"
+        }
+    },
+    "platforms": [
+        "Any"
+    ],
+    "keywords": ["cc65"],
+    "optionalPaths": [
+        ".github/*"
+    ]
+}
