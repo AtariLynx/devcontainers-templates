@@ -11,12 +11,13 @@
             "type": "string",
             "description": "Alpine version:",
             "proposals": [
+				"3.21",
 				"3.20",
 				"3.19",
 				"3.18",
                 "3.17"
             ],
-            "default": "3.20"
+            "default": "3.21"
         },
         "cc65Version": {
             "type": "string",

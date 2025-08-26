@@ -1,7 +1,7 @@
 # See here for image contents: https://github.com/devcontainers/images/blob/main/src/base-alpine/.devcontainer/Dockerfile
 
-# [Choice] Alpine version: 3.16, ..., 3.20
-ARG VARIANT="3.20"
+# [Choice] Alpine version: 3.16, ..., 3.21
+ARG VARIANT="3.21"
 FROM mcr.microsoft.com/vscode/devcontainers/base:alpine-${VARIANT}
 
 ARG CC65_VERSION=latest
