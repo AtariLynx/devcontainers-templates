@@ -1,8 +1,8 @@
 {
     "id": "cc65",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "cc65",
-    "description": "Atari Lynx dev container template for cc65",
+    "description": "Atari Lynx devcontainer template for cc65",
     "documentationURL": "https://github.com/AtariLynx/",
     "publisher": "Atari Lynx developers community",
     "licenseURL": "https://github.com/devcontainers/templates/blob/main/LICENSE",

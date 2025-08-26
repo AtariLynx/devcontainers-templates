@@ -12,27 +12,27 @@ The template support choosing a specific cc65 version based on tags in the Git c
 Apply the template to your Atari Lynx cc65 project by running:
 
 ```
-devcontainer templates apply --template-id ghcr.io/atarilynx/templates/cc65:latest
+devcontainer templates apply --template-id ghcr.io/atarilynx/devcontainers-templates/cc65:latest
 ```
 
 or 
 
 ```
-devcontainer templates apply --template-id ghcr.io/atarilynx/templates/cc65:latest
+devcontainer templates apply --template-id ghcr.io/atarilynx/devcontainers-templates/cc65:latest
 	--template-args '{ "imageVariant" : "3.21", "cc65Version" : "2.19" }'
 ```
 
 
 ## Available features
 
-There are a number of features available for Atari Lynx development this [repository]https://github.com/AtariLynx/features.
+There are a number of features available for Atari Lynx development in this [repository](https://github.com/AtariLynx/devcontainers-features).
 
 You can add these features by specifying them in your `devcontainer.json` file.
 
 ```json
 	"features": {
-		"ghcr.io/atarilynx/devcontainers/make_lnx:latest": {},
-		"ghcr.io/atarilynx/devcontainers/sprpck:latest": {}
+		"ghcr.io/atarilynx/devcontainers-features/make_lnx:latest": {},
+		"ghcr.io/atarilynx/devcontainers-features/sprpck:latest": {}
 	},
 ```
 
@@ -59,11 +59,11 @@ Update the version of the new templates in the `devcontainer-template.json` file
 Publication of all templates:
 
 ```cmd
-devcontainer templates publish ./src -n atarilynx/templates
+devcontainer templates publish ./src -n atarilynx/devcontainers-templates
 ```
 
 A specific template is published with:
 
 ```cmd
-devcontainer templates publish ./src/cc65 -n atarilynx/templates
+devcontainer templates publish ./src/cc65 -n atarilynx/devcontainers-templates
 ```

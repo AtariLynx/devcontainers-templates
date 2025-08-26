@@ -1,16 +1,17 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.154.0/containers/alpine
 {
 	"name": "cc65",
-	"build": {
-		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick an Alpine version: 3.16, ..., 3.20
-		"args": { 
-			"VARIANT": "${templateOption:imageVariant}",
-			"CC65_VERSION": "${templateOption:cc65Version}"
-		}
+	"image": "mcr.microsoft.com/devcontainers/base:alpine-${templateOption:imageVariant}",
+
+	"features": {	
+		"ghcr.io/atarilynx/devcontainers-features/cc65:latest": {
+			"version": "${templateOption:cc65Version}"
+		},
+		"ghcr.io/atarilynx/devcontainers-features/lynxenc:latest": {},
+		"ghcr.io/atarilynx/devcontainers-features/make_lnx:latest": {},
+		"ghcr.io/atarilynx/devcontainers-features/sprpck:latest": {}
 	},
-	
+
 	// Set *default* container specific settings.json values on container create. 
 	"customizations": {
 		"vscode": {
