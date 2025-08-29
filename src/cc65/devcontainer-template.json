@@ -36,7 +36,7 @@
     "platforms": [
         "Any"
     ],
-    "keywords": ["cc65"],
+    "keywords": ["bll", "atari", "lynx"],
     "optionalPaths": [
         ".github/*"
     ]
