@@ -1,0 +1,30 @@
+{
+    "id": "bll",
+    "version": "1.0.0",
+    "name": "bll",
+    "description": "Atari Lynx devcontainer template for BLL based development",
+    "documentationURL": "https://github.com/AtariLynx/",
+    "publisher": "Atari Lynx developers community",
+    "licenseURL": "https://github.com/devcontainers/templates/blob/main/LICENSE",
+    "options": {
+        "imageVariant": {
+            "type": "string",
+            "description": "Alpine version:",
+            "proposals": [
+				"3.21",
+				"3.20",
+				"3.19",
+				"3.18",
+                "3.17"
+            ],
+            "default": "3.21"
+        }
+    },
+    "platforms": [
+        "Any"
+    ],
+    "keywords": ["bll", "atari", "lynx"],
+    "optionalPaths": [
+        ".github/*"
+    ]
+}

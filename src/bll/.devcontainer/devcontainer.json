@@ -1,0 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+{
+	"name": "bll",
+	"image": "mcr.microsoft.com/devcontainers/base:alpine-${templateOption:imageVariant}",
+
+	"features": {
+		"ghcr.io/atarilynx/devcontainers-features/new_bll:latest": {},
+		"ghcr.io/atarilynx/devcontainers-features/make_lnx:latest": {}, 
+		"ghcr.io/atarilynx/devcontainers-features/sprpck:latest": {}
+	},
+
+	// Set *default* container specific settings.json values on container create. 
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.shell.linux": "/bin/ash"
+			},
+			"extensions": [
+				"ms-vscode.makefile-tools",
+				"ms-vscode.hexeditor"
+			]
+		}
+	},
+	
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}
