@@ -1,6 +1,6 @@
 {
     "id": "bll",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "bll",
     "description": "Atari Lynx devcontainer template for BLL based development",
     "documentationURL": "https://github.com/AtariLynx/",

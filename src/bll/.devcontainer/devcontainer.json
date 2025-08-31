@@ -5,7 +5,6 @@
 
 	"features": {
 		"ghcr.io/atarilynx/devcontainers-features/new_bll:latest": {},
-		"ghcr.io/atarilynx/devcontainers-features/make_lnx:latest": {}, 
 		"ghcr.io/atarilynx/devcontainers-features/sprpck:latest": {}
 	},
 

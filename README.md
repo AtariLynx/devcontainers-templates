@@ -22,6 +22,24 @@ devcontainer templates apply --template-id ghcr.io/atarilynx/devcontainers-templ
 	--template-args '{ "imageVariant" : "3.21", "cc65Version" : "2.19" }'
 ```
 
+## BLL template
+The template for BLL use the sources for new_bll and lyxass from https://github.com/42Bastian to build the tool suite for 6502 development. There are Atari Lynx specific tools available as separate features, although `make_lnx` and `lynxenc` are included in `new_bll`. 
+
+This template is only usable for 65C02 and 65SC02 based Atari Lynx targets.
+
+The image is based on the dev container Alpine base image. The Alpine version can be specified in the `imageVariant` template option. 
+
+Apply the template to your Atari Lynx BLL project by running:
+
+```
+devcontainer templates apply --template-id ghcr.io/atarilynx/devcontainers-templates/bll:latest
+```
+
+or 
+
+```
+devcontainer templates apply --template-id ghcr.io/atarilynx/devcontainers-templates/bll:latest
+	--template-args '{ "imageVariant" : "3.21" }'
 
 ## Available features
 
