@@ -40,6 +40,7 @@ or
 ```
 devcontainer templates apply --template-id ghcr.io/atarilynx/devcontainers-templates/bll:latest
 	--template-args '{ "imageVariant" : "3.21" }'
+```
 
 ## Available features
 
